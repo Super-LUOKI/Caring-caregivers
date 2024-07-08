@@ -1,0 +1,27 @@
+<view class="page">
+    <swiper class="swiper" indicator-dots="{{hospital.imgs.length > 1}}">
+        <swiper-item class="swiper-item" wx:for="{{hospital.imgs}}" wx:key="item">
+            <van-image width="100%" height="100%" fit="cover" src="{{item}}" />
+        </swiper-item>
+    </swiper>
+
+    <view class="container">
+
+        <view class="name">{{hospital.name}}</view>
+
+        <view class="price">{{hospital.price}}</view>
+
+        <view class="content-title">陪护详情</view>
+        <view class="section">
+            <view class="content-item" wx:for="{{hospital.detail}}" wx:key="index">
+                <view class="title">{{item[0]}}</view>
+                <view class="content">{{item[1]}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="bottom-opts">
+        <button open-type="contact" class="opt-item opt-service">客服</button>
+        <button class="opt-item opt-phone" bindtap="handleCall">联系电话</button>
+    </view>
+</view>

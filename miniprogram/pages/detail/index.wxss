@@ -1,0 +1,72 @@
+.swiper {
+    height: 300px;
+}
+
+.container {
+    padding: 15px;
+}
+.name{
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+
+.price {
+    margin-bottom: 15px;
+    color: red;
+    font-size: 18px;
+}
+
+.content-title {
+    margin-bottom: 15px;
+    color: #5792ff;
+    font-size: 18px;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.content-item  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.content-item .title{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.content-item .content{
+    font-size: 15px;
+}
+
+.bottom-opts{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+}
+
+.opt-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 0;
+}
+
+.opt-service {
+    background: #5792ff;
+}
+
+.opt-phone{
+    background: #e5372e;
+}
